@@ -1,0 +1,10 @@
+Entity inserted into database at: 09-05-2012 20:38:56
+First name: Ispan
+Last name: Arnold
+Address: Bulevardul Vasile Parvan nr.30
+Sex: male
+Age: 31
+ID Card Number: 88723333455
+Phone number: 0721334455
+Email: ispanarnold@gmail.com
+Occupation: programmer

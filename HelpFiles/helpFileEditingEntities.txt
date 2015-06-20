@@ -1,0 +1,3 @@
+Help File 4 - Editing Entities
+
+In order to edit entities in the database, go to Edit->... and select what entity you would like to edit: Pacient, Doctor, Department etc.

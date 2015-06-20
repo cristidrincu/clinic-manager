@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="MODEL/DatabaseConnection.java|VIEW/TextAreaOutputStream.java|VIEW/PanelMasterSuppliesDoctorActivity.java|MODEL/DatabaseBrowseLatestDiagnostics.java|MODEL/DatabaseBrowseLatestDoctorActivity.java|MODEL/DatabaseBrowseLatestPacients.java|MODEL/DatabaseBrowseLatestSupplies.java|ACTIONS/SortActions.java|MODEL/DataBrowseTest.java|MODEL/CellEditorListenerTest.java|MODEL/CellEditorTableTest.java|MODEL/EditDoctorDatabase.java|MODEL/InsertCleaningPersonnelIntoDatabase.java|VIEW/PanelViewSuppliers.java|VIEW/PanelViewCleaning.java|VIEW/PanelViewAssistants.java|MODEL/EditEntityDatabase.java|MODEL/InsertMedicalAssistantIntoDatabase.java|MODEL/InsertSupplierIntoDatabase.java" kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/dsn-1.4.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/imap-1.4.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/mailapi-1.4.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/pop3-1.4.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/smtp-1.4.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/commons-logging-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/junit-3.8.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/log4j-1.2.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/poi-3.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/dom4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/stax-api-1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/poi-excelant-3.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/poi-ooxml-3.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/poi-ooxml-schemas-3.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/commons-lang-2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/swingx-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/mysql-connector-java-5.1.35.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/ojdbc6-11.2.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

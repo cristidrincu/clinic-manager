@@ -1,0 +1,10 @@
+Entity inserted into database at: 10-05-2012 20:53:34
+First name: Crisan
+Last name: Caius
+Address: dsda
+Sex: sadas
+Age: 30
+ID Card Number: 30
+Phone number: 30
+Email: dsdas
+Occupation: dsdads

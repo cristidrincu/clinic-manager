@@ -1,0 +1,3 @@
+Help File 2 - Sending emails
+
+In order to send emails, go to File->New->Send email and select the kind of entity (pacient, doctor) you would like to send email to!

@@ -1,0 +1,10 @@
+Entity inserted into database at: 09-05-2012 19:08:29
+First name: Cristian
+Last name: Drincu
+Address: Aleea FC Ripensia nr.8,ap.16
+Sex: male
+Age: 30
+ID Card Number: 9977441122
+Phone number: 0744627147
+Email: cristidrincu@gmail.com
+Occupation: programmer

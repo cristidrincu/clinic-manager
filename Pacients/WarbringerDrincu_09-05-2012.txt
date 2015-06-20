@@ -1,0 +1,10 @@
+Entity inserted into database at: 09-05-2012 20:34:46
+First name: Warbringer
+Last name: Drincu
+Address: Aleea FC Ripensia Nr.8, ap.16
+Sex: male
+Age: 31
+ID Card Number: 7847347387
+Phone number: 38293892
+Email: warbringer@starcraft2-vidcasts.ro
+Occupation: commentator
