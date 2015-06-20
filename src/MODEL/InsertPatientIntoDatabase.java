@@ -11,17 +11,17 @@ import entities.Person;
 
 import MODEL.DatabaseConnector;
 
-public class InsertPacientIntoDatabase extends InsertEntityIntoDatabase {
+public class InsertPatientIntoDatabase extends InsertEntityIntoDatabase {
 	
 	private Box pacientBox;
 	
 	private JPanel mainContainer;
 	
-	//pacient text fields and other components
+	//pacient text fields and other components	
 	private JTextField pacientOccupationHolder;
 	private JTextField pacientDiagnosticsHolder;
 	
-	//pacient labels
+	//pacient labels	
 	private JLabel pacientOccupationLabel;
 	private JLabel pacientDiagnosticsLabel;
 	
@@ -36,16 +36,15 @@ public class InsertPacientIntoDatabase extends InsertEntityIntoDatabase {
 	//save to file when inserting object in database
 	private SaveEntityToFile saveEntity;
 	
-	public InsertPacientIntoDatabase(){
-		pacientBox = Box.createVerticalBox();
-		//pacientBox.setPreferredSize(new Dimension(300,500));
-		
+	public InsertPatientIntoDatabase(){
+		pacientBox = Box.createVerticalBox();		
+				
 		pacientOccupationLabel = new JLabel("Pacient Occupation: ");
 		pacientDiagnosticsLabel = new JLabel("Pacient Diagnostics: ");
 		
 		pacientOccupationHolder = new JTextField();
 		pacientDiagnosticsHolder = new JTextField();
-		
+				
 		pacientBox.add(pacientOccupationLabel);
 		pacientBox.add(Box.createHorizontalStrut(5));
 		pacientBox.add(pacientOccupationHolder);
@@ -78,7 +77,7 @@ public class InsertPacientIntoDatabase extends InsertEntityIntoDatabase {
 		        null);
 		if(okBtnOptionPane==JOptionPane.OK_OPTION){
 				//insert into database text field values
-				query = "INSERT INTO HR.PACIENTS(FIRST_NAME, LAST_NAME, ADDRESS, SEX, AGE, ID_CARD, PHONE_NUMBER,EMAIL,OCCUPATION) VALUES("
+				query = "INSERT INTO clinic.Patients(firstName, lastName, address, sex, age, idCard, phoneNumber, email, occupation) VALUES("
 						+"'"
 						+super.getInputFirstNameHolder().getText()
 						+"'"

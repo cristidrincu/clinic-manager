@@ -21,7 +21,7 @@ public class InsertDoctorIntoDatabase extends InsertEntityIntoDatabase implement
 	
 	private Box doctorBox;
 	private JPanel mainContainer;
-	private JList departments;
+	private JList<String> departments;
 	private JScrollPane scrollPane;
 	private Vector<String> vectorListModel = new Vector<String>();
 	
@@ -52,7 +52,7 @@ public class InsertDoctorIntoDatabase extends InsertEntityIntoDatabase implement
 		DBConnector = new DatabaseConnector();
 		DBBrowse = new DatabaseBrowse();
 		vectorListModel = DBBrowse.createVectorModel(DBConnector, queryDepartmentsNames, "NAME", vectorListModel);
-		departments = new JList(vectorListModel);
+		departments = new JList<String>(vectorListModel);
 		departments.addListSelectionListener(this);
 		scrollPane = new JScrollPane(departments);
 		scrollPane.setPreferredSize(new Dimension(350,100));
@@ -113,7 +113,7 @@ public class InsertDoctorIntoDatabase extends InsertEntityIntoDatabase implement
 		if(okBtnOptionPane==JOptionPane.OK_OPTION){
 			
 			//insert into database text field values
-			query = "INSERT INTO HR.EMPLOYEE(DEPARTMENT_ID,FIRST_NAME, LAST_NAME, ADDRESS, SEX, AGE, CARD_ID, PHONE_NUMBER,EMAIL_ADDRESS, DEPARTMENT, SPECIALIZATION,EXPERIENCE) VALUES("
+			query = "INSERT INTO clinic.Employee(DEPARTMENT_ID, FIRST_NAME, LAST_NAME, ADDRESS, SEX, AGE, CARD_ID, PHONE_NUMBER,EMAIL_ADDRESS, DEPARTMENT, SPECIALIZATION,EXPERIENCE) VALUES("
 					+"'"
 					+departmentID+"'"
 					+","

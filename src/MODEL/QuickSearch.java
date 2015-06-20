@@ -87,21 +87,21 @@ public class QuickSearch implements ActionListener {
 				}
 				switch(selectedChoice){
 				case "Pacient":
-					query="SELECT FIRST_NAME,LAST_NAME, ADDRESS,SEX,AGE,ID_CARD,PHONE_NUMBER,EMAIL,OCCUPATION FROM HR.PACIENTS WHERE LAST_NAME LIKE '%"+quickSearchText.getText()+
-					"%' OR FIRST_NAME LIKE '%"+quickSearchText.getText()+"%'";
+					query="SELECT firstName, lastName, address, sex, age, idCard, phoneNumber, email, occupation FROM clinic.Patients WHERE lastName LIKE '%"+quickSearchText.getText()+
+					"%' OR firstName LIKE '%"+quickSearchText.getText()+"%'";
 					dbBrowse = new DatabaseBrowse(dbConnector,query);
 					break;
 				case "Doctor":
-					query="SELECT FIRST_NAME,LAST_NAME, DEPARTMENT, ADDRESS,AGE,EMAIL_ADDRESS,PHONE_NUMBER FROM HR.EMPLOYEE WHERE LAST_NAME LIKE '%"+quickSearchText.getText()+
-					"%' OR FIRST_NAME LIKE '%"+quickSearchText.getText()+"%'";
+					query="SELECT firstName, lastName, department, address, age, emailAddress, phoneNumber FROM clinic.Employee WHERE lastName LIKE '%"+quickSearchText.getText()+
+					"%' OR firstName LIKE '%"+quickSearchText.getText()+"%'";
 					dbBrowse = new DatabaseBrowse(dbConnector,query);
 					break;
 				case "Diagnostics":
-					query = "SELECT NAME,ANALYSIS FROM HR.DIAGNOSTICS WHERE NAME LIKE '%"+quickSearchText.getText()+"%'";
+					query = "SELECT name, analysis FROM clinic.Diagnostics WHERE name LIKE '%"+quickSearchText.getText()+"%'";
 					dbBrowse = new DatabaseBrowse(dbConnector,query);
 					break;
 				case "Prescription":
-					query="SELECT SUMMARY, PRESCRIPTION_DATE FROM HR.PRESCRIPTIONS WHERE SUMMARY LIKE '%"+quickSearchText.getText()+"%'";
+					query="SELECT summary, prescriptionDate FROM clinic.Prescriptions WHERE summary LIKE '%"+quickSearchText.getText()+"%'";
 					dbBrowse = new DatabaseBrowse(dbConnector,query);
 					break;
 				}

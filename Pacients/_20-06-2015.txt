@@ -1,0 +1,10 @@
+Entity inserted into database at: 20-06-2015 16:35:56
+First name: 
+Last name: 
+Address: 
+Sex: 
+Age: 
+ID Card Number: 
+Phone number: 
+Email: 
+Occupation: 

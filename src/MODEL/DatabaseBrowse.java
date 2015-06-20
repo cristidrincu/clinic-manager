@@ -51,11 +51,11 @@ public class DatabaseBrowse extends JPanel {
 					resultSet = stmt.executeQuery();
 					theModel.setResultSet(resultSet);
 					break;
-				case 3:
-					stmt = conn.prepareStatement(queryConstant.getSELECT_SUPPLY_STOCK());
-					resultSet = stmt.executeQuery();
-					theModel.setResultSet(resultSet);
-					break;
+//				case 3:
+//					stmt = conn.prepareStatement(queryConstant.getSELECT_SUPPLY_STOCK());
+//					resultSet = stmt.executeQuery();
+//					theModel.setResultSet(resultSet);
+//					break;
 				case 4:
 					stmt = conn.prepareStatement(queryConstant.getSELECT_LATEST_DOCTOR_ACTIVITY());
 					resultSet = stmt.executeQuery();
@@ -71,21 +71,21 @@ public class DatabaseBrowse extends JPanel {
 					resultSet = stmt.executeQuery();
 					theModel.setResultSet(resultSet);
 					break;
-				case 7:
-					stmt = conn.prepareStatement(queryConstant.getSELECT_ALL_ASSISTANTS_ALPHA());
-					resultSet = stmt.executeQuery();
-					theModel.setResultSet(resultSet);
-					break;
+//				case 7:
+//					stmt = conn.prepareStatement(queryConstant.getSELECT_ALL_ASSISTANTS_ALPHA());
+//					resultSet = stmt.executeQuery();
+//					theModel.setResultSet(resultSet);
+//					break;
 				case 8:
 					stmt = conn.prepareStatement(queryConstant.getSELECT_ALL_CLEANING_ALPHA());
 					resultSet = stmt.executeQuery();
 					theModel.setResultSet(resultSet);
 					break;
-				case 9:
-					stmt = conn.prepareStatement(queryConstant.getSELECT_ALL_SUPPLIERS_ALPHA());
-					resultSet = stmt.executeQuery();
-					theModel.setResultSet(resultSet);
-					break;
+//				case 9:
+//					stmt = conn.prepareStatement(queryConstant.getSELECT_ALL_SUPPLIERS_ALPHA());
+//					resultSet = stmt.executeQuery();
+//					theModel.setResultSet(resultSet);
+//					break;
 				case 10:
 					stmt = conn.prepareStatement(queryConstant.getSELECT_ALL_DEPARTMENTS_ALPHA());
 					resultSet = stmt.executeQuery();
@@ -162,7 +162,7 @@ public class DatabaseBrowse extends JPanel {
 			Class.forName(databaseConnector.getDatabaseDriver());
 			conn = DriverManager.getConnection(databaseConnector.getDatabaseLocation(), databaseConnector.getUserName(), databaseConnector.getPassword());
 			stmt = conn.prepareStatement(query);
-			stmt.executeQuery();
+			stmt.executeUpdate();
 			JOptionPane.showMessageDialog(null, "Database updated succesfully and connection closed!");
 		}catch(ClassNotFoundException cnfe){
 			JOptionPane.showMessageDialog(null, cnfe.getMessage());

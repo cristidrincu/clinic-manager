@@ -14,7 +14,7 @@ public class AppointmentDisplay extends PanelLatestBaseClass {
 	
 	public AppointmentDisplay(){
 		super();
-		allAppointmentsQuery = "SELECT FIRST_NAME,LAST_NAME,APP_HOUR,APP_DATE,EMAIL_ADDRESS,PHONE_NUMBER FROM HR.APPOINTMENTS ORDER BY LAST_NAME";
+		allAppointmentsQuery = "SELECT firstName,lastName,appHour,appDate,emailAddress,phoneNumber FROM clinic.Appointments ORDER BY lastName";
 		browseAllAppointments = new DatabaseBrowse(databaseConnector, allAppointmentsQuery);
 		panelAllAppointments.setLayout(new BorderLayout());
 		panelAllAppointments.add(new JLabel("Latest Diagnostics", JLabel.CENTER), BorderLayout.PAGE_START);

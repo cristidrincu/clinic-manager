@@ -1,0 +1,8 @@
+Doctor inserted into database at: 20-06-2015 17:24:25
+Doctor's First Name: George
+Doctor's Last Name: 
+Doctor's Email Address: null
+Doctor's Phone Number: 
+Doctor's specialty: 
+Doctor's department: null
+Doctor's experience: 

@@ -49,7 +49,7 @@ public class AppointmentApp implements ActionListener,ListSelectionListener {
 	private JLabel doctorNamesLabel;
 	
 	//list component
-	private JList doctorsList;
+	private JList<String> doctorsList;
 	private Vector<String> listModelVector = new Vector<String>();
 	private int employeeID;
 	
@@ -60,7 +60,7 @@ public class AppointmentApp implements ActionListener,ListSelectionListener {
 	private String getDoctorsQuery;//needed to select doctor for appointment
 	
 	//private static final String FILE_DATE_FORMAT = "dd-MM-yyyy";
-	
+		
 	public AppointmentApp(){
 		//connecting to database in order to create the model for the list
 		DBConnector = new DatabaseConnector();
@@ -68,7 +68,7 @@ public class AppointmentApp implements ActionListener,ListSelectionListener {
 		
 		getDoctorsQuery = "SELECT LAST_NAME FROM EMPLOYEE";
 		listModelVector = DBBrowse.createVectorModel(DBConnector, getDoctorsQuery, "LAST_NAME", listModelVector);
-		doctorsList = new JList(listModelVector);
+		doctorsList = new JList<String>(listModelVector);
 		doctorsList.addListSelectionListener(this);
 		doctorsList.setPreferredSize(new Dimension(300,300));
 		
@@ -188,7 +188,7 @@ public class AppointmentApp implements ActionListener,ListSelectionListener {
 		        null);
 		
 		if(okBtn==JOptionPane.OK_OPTION){
-			query = "INSERT INTO HR.APPOINTMENTS (FIRST_NAME,LAST_NAME,APP_HOUR,APP_DATE,EMAIL_ADDRESS,PHONE_NUMBER,EMPLOYEE_ID) " +
+			query = "INSERT INTO clinic.Appointments (firstName, lastName, appHour, appDate, emailAddress, phoneNumber, employeeId) " +
 					"VALUES" +
 					" (" + 
 					"'"+firstName.getText()+"'"+","+"'"+lastName.getText()+"'"+","+"'"+hour.getText()+"'"+","+

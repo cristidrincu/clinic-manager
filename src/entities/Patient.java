@@ -1,6 +1,6 @@
 package entities;
 
-public class Pacient extends Person {
+public class Patient extends Person {
 	
 	//private Diagnostics[] diagnostics;
 	

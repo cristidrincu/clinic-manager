@@ -34,6 +34,7 @@ public abstract class InsertEntityIntoDatabase {
 	private JTextField inputPhoneNumberHolder;
 	private JTextField inputEmailAddressHolder;
 	
+	private JLabel allFieldsAreMandatory;
 	private JLabel firstNameLabel;
 	private JLabel lastNameLabel;
 	private JLabel homeAddressLabel;
@@ -57,8 +58,7 @@ public abstract class InsertEntityIntoDatabase {
 		inputPhoneNumberHolder = new JTextField();
 		inputEmailAddressHolder = new JTextField();
 		
-		
-		
+		allFieldsAreMandatory = new JLabel("All fields are mandatory: ");
 		firstNameLabel = new JLabel("First name: ", JLabel.LEFT);
 		lastNameLabel = new JLabel("Last name: ", JLabel.LEFT);
 		homeAddressLabel = new JLabel("Home address: ", JLabel.LEFT);
@@ -71,6 +71,9 @@ public abstract class InsertEntityIntoDatabase {
 		
 		inputBox = Box.createVerticalBox();
 		inputBox.setPreferredSize(new Dimension(400,500));
+		inputBox.add(Box.createVerticalStrut(5));
+		
+		inputBox.add(allFieldsAreMandatory);
 		inputBox.add(Box.createVerticalStrut(5));
 		
 		inputBox.add(firstNameLabel);

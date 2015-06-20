@@ -5,7 +5,7 @@ import MODEL.AppointmentApp;
 import MODEL.InsertDoctorIntoDatabase;
 import MODEL.InsertDiagnosticIntoDatabase;
 import MODEL.InsertEntityIntoDatabase;
-import MODEL.InsertPacientIntoDatabase;
+import MODEL.InsertPatientIntoDatabase;
 import MODEL.InsertPrescriptionIntoDatabase;
 import MODEL.SendEmailClient;
 
@@ -36,7 +36,7 @@ public class NewActions extends ActionBaseClass {
 		switch(actionID){
 		case "createNewPacientObject":
 			//setDialogBox(new InsertPacientIntoDatabase());
-			dialogBox = new InsertPacientIntoDatabase();
+			dialogBox = new InsertPatientIntoDatabase();
 			dialogBox.executeInsert();
 			dialogBox.writeEntityToFile();
 			break;
