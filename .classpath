@@ -20,6 +20,5 @@
 	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/commons-lang-2.4.jar"/>
 	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/swingx-1.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/mysql-connector-java-5.1.35.jar"/>
-	<classpathentry exported="true" kind="lib" path="/Users/cristiandrincu/Documents/workspace_lucrare_licenta/APLICATIE_POLICLINCA/lib/ojdbc6-11.2.0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

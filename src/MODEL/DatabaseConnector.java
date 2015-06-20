@@ -10,9 +10,14 @@ public class DatabaseConnector  {
 	
 	//default database connector for the application at hand, using a Oracle Database to manipulate data
 	public DatabaseConnector(){
-		this.databaseDriver = "oracle.jdbc.driver.OracleDriver";
-		this.databaseLocation="jdbc:oracle:thin:@localhost:1521:orcl";
-		this.userName = "HR";
+//		this.databaseDriver = "oracle.jdbc.driver.OracleDriver";
+//		this.databaseLocation="jdbc:oracle:thin:@localhost:1521:orcl";
+//		this.userName = "HR";
+//		this.password = "crusader2";
+		
+		this.databaseDriver = "com.mysql.jdbc.Driver";
+		this.databaseLocation="jdbc:mysql://localhost:3306/clinic";
+		this.userName = "root";
 		this.password = "crusader2";
 	}
 	

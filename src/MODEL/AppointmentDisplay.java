@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import VIEW.PanelLatestBaseClass;
 
 public class AppointmentDisplay extends PanelLatestBaseClass {
-	private static DatabaseConnector databaseConnector=new DatabaseConnector("oracle.jdbc.driver.OracleDriver", "jdbc:oracle:thin:@localhost:1521:orcl", "HR","crusader2");
+	private static DatabaseConnector databaseConnector=new DatabaseConnector("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/clinic", "root","crusader2");
 	private static DatabaseBrowse browseAllAppointments;
 	private static JPanel panelAllAppointments = new JPanel();
 	private String allAppointmentsQuery;

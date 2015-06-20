@@ -36,7 +36,7 @@ public class DatabaseBrowse extends JPanel {
 		theModel = new ResultsModel();
 		queryConstant = new InitialAppPanelsQueryConstants();
 		
-		try{
+		try{			
 			Class.forName(databaseConnector.getDatabaseDriver());
 			conn = DriverManager.getConnection(databaseConnector.getDatabaseLocation(), databaseConnector.getUserName(), databaseConnector.getPassword());
 			//statement = conn.createStatement();

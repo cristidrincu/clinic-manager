@@ -1,19 +1,9 @@
 package MODEL;
-import oracle.jdbc.util.*;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Vector;
 
 import javax.swing.Box;
@@ -25,11 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import oracle.jdbc.*;
 
 import org.jdesktop.swingx.JXDatePicker;
-
-import VIEW.MainWindowInterface;
 
 public class AppointmentApp implements ActionListener,ListSelectionListener {
 	
